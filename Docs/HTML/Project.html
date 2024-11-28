@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(228, 179, 74);
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar button {
+    padding: 8px 15px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.navbar button:hover {
+    background-color: darkgray;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: gray;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-button:hover {
+    background-color: darkgray;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content {
+    flex: 1 1 calc(33.33% - 40px); /* Three columns with space */
+    margin: 10px;
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden; /* Avoid content spilling out */
+    margin: auto;
+}
+
+.image-section {
+    text-align: center;
+    padding: 10px;
+}
+
+.image-section img {
+    width: 100%; /* Ensure the image fits the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: auto;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #ccc;
+    font-size: 14px;
+}
+
+
+        </style>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button class="search-button">&#128269;</button>
+        </div>
+        <nav class="navbar">
+            
+            <a href="Index.html">
+                <button>Back</button>
+            </a>
+        </nav>
+    </header>
+
+        <main>
+    <div>
+            <section class="content">
+        <p> Quiz Application
+</p>
+    </section>
+
+    <div class="image-section">
+        <img src="P1.jfif" alt="Profile image">
+    </div>
+    </div>
+    <div>
+    <section class="content">
+        <p>Quiz Difficulties
+</p>
+    </section>
+
+    <div class="image-section">
+        <img src="P2.jfif" alt="Profile image">
+    </div>
+</div>
+<div>
+    <section class="content">
+        <p>Database 1</p>
+    </section>
+
+    <div class="image-section">
+        <img src="P3.png" alt="Profile image">
+    </div>
+</div>
+<div>
+    <section class="content">
+        <p>Database 2: Medicine Inventory
+</p>
+    </section>
+
+    <div class="image-section">
+        <img src="P4.jfif" alt="Profile image">
+    </div>
+</div>
+<div>
+    <section class="content">
+
+    <p>2nd Anniversary Website
+    </p>
+    </section>
+
+    <div class="image-section">
+        <img src="P5.jfif" alt="Profile image">
+    </div>
+</div>
+</main>
+
+<div class="video-background">
+    <video autoplay muted loop id="bgVideo">
+        <source src="/images/bg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+</div>
+
+    <footer>
+        <p>Jay Lord P. Panganiban | BSIT 3D | Integrative Programming Technologies </p>
+        <p>Mr. Cerwin John Zaulda</p>
+    </footer>
+</body>
+</html>

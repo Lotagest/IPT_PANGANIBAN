@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(235, 181, 81);
+    font-size: 25px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar button {
+    padding: 8px 15px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.navbar button:hover {
+    background-color: darkgray;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+   
+}
+
+.search-container input {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: gray;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-button:hover {
+    background-color: darkgray;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    justify-content: center;
+}
+
+.content {
+    width: 70%;
+    margin: 20px;
+    border: 3px solid #000;
+}
+
+.skills-container {
+    margin-top: 20px;
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-category {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-item {
+    font-size: 1.2em;
+    margin: 5px 0;
+    padding: 5px 10px;
+    transition: transform 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    background-color: #ffe0b2;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+        </style>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button class="search-button">&#128269;</button>
+        </div>
+        <nav class="navbar">
+            
+            <a href="Index.html">
+                <button>Back</button>
+            </a>
+        </nav>
+    </header>
+
+        <main>
+    <section class="content">
+        <h1>Skills and Experience</h1>
+        <br>
+        <br>
+        <p>General: Communication Skills, Leading Skills, Problem Solver.
+</p>
+<p>IT Skills: HTML, CSS, Javascript, Bootstrap, Opentdb, Epress.js, Microsofts.</p>
+    </section>
+</main>
+
+<div class="video-background">
+    <video autoplay muted loop id="bgVideo">
+        <source src="/images/bg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+</div>
+
+    <footer>
+        <p>Jay Lord P. Panganiban | BSIT 3D | Integrative Programming Technologies </p>
+        <p>Mr. Cerwin John Zaulda</p>
+    </footer>
+
+    <script src="Skills.js"></script>
+
+</body>
+</html>
