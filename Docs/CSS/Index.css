@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(219, 152, 76);
+    font-size: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar button {
+    padding: 8px 15px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.navbar button:hover {
+    background-color: darkgray;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: gray;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-button:hover {
+    background-color: darkgray;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    width: 70%;
+    margin: 20px;
+    border: 3px solid #000;
+}
+.h1 {
+  font-size: 30px;
+}
+.p {
+  font-size: 15px;
+}
+
+/* Ensure the image section is centered */
+.image-section {
+    text-align: center;
+    margin: 20px auto; /* Adjust margin as per your needs */
+    padding: 10px;
+    width: 50%; /* Set an appropriate width */
+    background-color: #fff; /* Optional, adjust background as needed */
+}
+
+.image-section img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional, for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional, adds a shadow effect */
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #ccc;
+    font-size: 30px;
+}
