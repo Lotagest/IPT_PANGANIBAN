@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 400px;
+}
+
+.picture-box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    background-color: #000;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+form {
+    margin: 10px 0;
+}
+
+label {
+    width: 180px; /* Adjust label width to create consistent spacing */
+    display: inline-block;
+    margin-right: 10px;
+    text-align: right; /* Align labels to the right for better spacing */
+    vertical-align: top;
+}
+
+input {
+    width: 200px; /* Ensure input fields are consistent */
+    margin-bottom: 10px;
+    vertical-align: top; /* Align inputs with labels */
+}
+
+input[type="text"],
+input[type="email"] {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+input[type="text"]:nth-child(odd),
+input[type="email"]:nth-child(odd) {
+    margin-right: 20px;
+}
